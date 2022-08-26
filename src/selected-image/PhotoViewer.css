@@ -1,0 +1,10 @@
+h1{
+    position: fixed;
+    top: 0;
+}
+
+div.titleAndMainImage{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
