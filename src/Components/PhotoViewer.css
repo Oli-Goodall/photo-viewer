@@ -4,12 +4,8 @@ h1{
 }
 
 .top-image {
+    
     max-width: 100%;
     height: auto;
     margin: 10px;
-}
-
-.thumbnails {
-    max-width: 350px;
-    height: auto;
 }
