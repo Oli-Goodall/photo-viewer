@@ -5,6 +5,6 @@ export function PhotoViewer({src}) {    // declare and export new function calle
     // let randomPhotoID = Math.floor(Math.random() * 1084)
     return (                
     // <img src={`https://picsum.photos/id/${randomPhotoID}/1600/900.jpg`}></img>
-    <img src={`${src}`}></img>
+        <img className="top-image" src={`${src}`}></img>
     );
 }

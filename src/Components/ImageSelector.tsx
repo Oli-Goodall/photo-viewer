@@ -11,7 +11,7 @@ export function ImageSelector(){
                     return (
                         <div key={index}>
                             <div>
-                                <img src={url}/>
+                                <img className="thumbnails" src={url}/>
                             </div>
                         </div>
                     )
