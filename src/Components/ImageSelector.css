@@ -1,0 +1,12 @@
+.imageSelector {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.thumbnails {  
+    /* margin: 10px; */
+    max-width: 350px;
+    height: auto;
+}

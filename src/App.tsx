@@ -40,7 +40,7 @@ function App() {
   return (
       <div className='titleAndMainImage'>
           <h1>React Photo Viewer</h1>
-          <PhotoViewer src={"https://picsum.photos/id/600/1600/900.jpg"}/>
+          <PhotoViewer src={"https://picsum.photos/id/600/1600/900.jpg"} />
           <ImageSelector/>
       </div>
   );
