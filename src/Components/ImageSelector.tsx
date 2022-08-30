@@ -1,11 +1,12 @@
 import React from "react";  // import React (to provide access to JSX)
 import {imageUrls} from './GetURLs'
+import './ImageSelector.css'
 
 
 export function ImageSelector(){
     // console.log(imageUrls);    
     return(
-        <div>
+        <div className="imageSelector">
             {
                 imageUrls.map((url, index) => {
                     return (
