@@ -3,12 +3,8 @@ import { imageUrls } from './GetURLs'
 import './gallery.css'
 
 
-export function Gallery() {
+export function Gallery({ setPhotoUrl }: { setPhotoUrl: (url:string) => void }) {  
 
-    const [photoUrl, setPhotoUrl] = useState('');
-
-    // when image is clicked { set state to selected image URL}
-    
     return (
         <div className="imageSelector">
             {
@@ -16,7 +12,11 @@ export function Gallery() {
                     return (
                         <div key={index}>
                             <div>
-                                <img className="thumbnails" src={url} />
+                                <img
+                                    className="thumbnails"
+                                    src={url}
+                                    onClick={() => { setPhotoUrl(url) }}
+                                />
                             </div>
                         </div>
                     )
