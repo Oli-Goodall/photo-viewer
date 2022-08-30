@@ -3,7 +3,7 @@ import { imageUrls } from './GetURLs'
 import './gallery.css'
 
 
-export function Gallery({ setPhotoUrl }: { setPhotoUrl: (url:string) => void }) {  
+export function Gallery({ setPhotoUrl }: { setPhotoUrl: (url: string) => void }) {
 
     return (
         <div className="imageSelector">
@@ -15,7 +15,12 @@ export function Gallery({ setPhotoUrl }: { setPhotoUrl: (url:string) => void }) 
                                 <img
                                     className="thumbnails"
                                     src={url}
-                                    onClick={() => { setPhotoUrl(url) }}
+                                    onClick={
+                                        () => {
+                                            setPhotoUrl(url);
+                                            window.scrollTo(0, 0);
+                                        }
+                                    }
                                 />
                             </div>
                         </div>
